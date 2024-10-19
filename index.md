@@ -44,7 +44,7 @@
 {%
   include button.html
   link="research"
-  text="我们的更多成绩"
+  text="我们的更多成果"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -56,7 +56,7 @@
   include feature.html
   image="images/cheer.jpg"
   link="research"
-  title="我们的成绩"
+  title="我们的成果"
   text=text
 %}
 
@@ -77,7 +77,7 @@
 
 {%
   include feature.html
-  image="images/cooporate.JPG"
+  image="images/cooporate.jpeg"
   link="projects"
   title="我们的项目"
   flip=true

@@ -1,8 +1,5 @@
 ---
 title: 成员
-nav:
-  order: 3
-  tooltip: 关于我们
 ---
 
 # {% include icon.html icon="fa-solid fa-users" %}23 赛季团队成员
