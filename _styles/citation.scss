@@ -5,11 +5,16 @@ $thumb-size: 180px;
 $wrap: 800px;
 
 .citation-container {
-  container-type: inline-size;
+
 }
 
 .citation {
   display: flex;
+  flex-direction: row; /* 保持水平排列 */
+  flex-wrap: wrap; /* 允许换行 */
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
   margin: 20px 0;
   border-radius: var(--rounded);
   background: var(--background);
@@ -19,8 +24,7 @@ $wrap: 800px;
 
 .citation-image {
   position: relative;
-  width: 60px;
-  flex-shrink: 0;
+
   fill: antiquewhite;
   // box-shadow: var(--shadow);
 }
@@ -34,15 +38,13 @@ $wrap: 800px;
 }
 
 .citation-text {
-  position: relative;
-  display: inline-flex;
-  flex-wrap: wrap;
+  display: flex;
   gap: 10px;
-  max-width: 100%;
   height: min-content;
-  padding: 20px;
-  padding-left: 30px;
+  width: 80%;
+  margin-bottom: 20px;
   text-align: left;
+  flex-direction: column;
   overflow-wrap: break-word;
   z-index: 0;
 }
@@ -59,15 +61,15 @@ $wrap: 800px;
   font-weight: var(--semi-bold);
   font-size: large;
   text-align: center;
+  margin-top: 20px;
 }
 .citation-info {
-  text-align: right;
   font-weight: var(--semi-bold);
 }
 
 .citation-text > .icon {
   position: absolute;
-  top: 20px;
+
   right: 20px;
   color: var(--light-gray);
   opacity: 0.5;
@@ -106,6 +108,6 @@ $wrap: 800px;
 
   .citation-image {
     width: unset;
-    height: $thumb-size;
+
   }
 }
