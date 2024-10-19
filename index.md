@@ -67,7 +67,7 @@
 {%
   include button.html
   link="projects"
-  text="Browse our projects"
+  text="我们的所有项目"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
