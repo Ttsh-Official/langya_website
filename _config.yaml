@@ -32,12 +32,15 @@ defaults:
     values:
       layout: post
 
+
 collections:
   # generate page for each member
   members:
     output: true
   # generate page for each post
   posts:
+    output: true
+  awards:
     output: true
 
 # jekyll plugins

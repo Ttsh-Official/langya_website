@@ -1,5 +1,5 @@
 
-# HUSTLYRMDESCRIPTION=An engaging 1-3 sentence description of your lab.'s Website
+# HUSTLYRM
 
 Visit **[hustlyrm.github.io/langya_website](https://hustlyrm.github.io/langya_website)** 🚀
 
