@@ -10,6 +10,9 @@
   | sort: "name"
   | reverse
 %}
+{% if include.head_text %}
+  {{ include.head_text }}
+{% endif %}
 
 {% for year in years %}
   {% assign data = year.items %}

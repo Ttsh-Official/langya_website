@@ -6,6 +6,12 @@ layout: default
 
 {% include portrait.html lookup=page.slug %}
 
+{% assign member = site.members
+  | where_exp: "member", "member.slug == page.slug"
+  | first
+  | default: include
+%}
+
 <div>
   {% for link in page.links %}
     {% assign key = link[0] %}
@@ -19,6 +25,16 @@ layout: default
 {% include float.html content=floatcontent %}
 
 {{ content }}
+{% include section.html %}
+{% assign filter_string = "members:" | append: member.name %}
+
+
+{% if member.award %}
+<h1>荣誉成就</h1>
+{% include list.html data="awards" component="awards" filters=filter_string type="full" %} 
+{% include section.html %}
+{% endif %}
+
 
 {% assign aliases = page.aliases
   | default: page.name
@@ -38,10 +54,9 @@ layout: default
   blog/?search={{ page.name }}
 {%- endcapture %}
 
-<!--
 <p class="center">
   <a href="{{ search | relative_url }}">
-    See {{ page.name | default: page.title }}'s posts on the Blog page
+    查看 {{ page.name | default: page.title }}  发布的博文
   </a>
 </p>
--->
+ 
