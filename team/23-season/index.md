@@ -1,9 +1,11 @@
 ---
 title: 成员
-
+nav:
+  order: 3
+  tooltip: 关于我们
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}24 赛季团队成员
+# {% include icon.html icon="fa-solid fa-users" %}23 赛季团队成员
 
 历史成员请参考[历届成员](/team/history)。
 
@@ -14,24 +16,24 @@ title: 成员
 {% include list_portrait.html data="members" component="portrait" filters="role: 指导老师" %}
 
 ## {% include icon.html icon="fa-solid fa-users" %}团队负责人
-{% include list_portrait.html data="members" component="portrait" filters="type: 24赛季团队负责人, time: 24" style="small" %}
+{% include list_portrait.html data="members" component="portrait" filters="type: 23赛季团队负责人,time: 23" style="small"  %}
 
 ## {% include icon.html icon="fa-solid fa-users" %}机械组
   
-{% include list_portrait.html data="members" component="portrait" filters="role: 机械组" style="small" %}
+{% include list_portrait.html data="members" component="portrait" filters="role: 机械组, time:23" style="small" %}
 
 ## {% include icon.html icon="fa-solid fa-users" %}电路组
 
-{% include list_portrait.html data="members" component="portrait" filters="role: 电路组" style="small" %}
+{% include list_portrait.html data="members" component="portrait" filters="role: 电路组, time:23" style="small" %}
 ## {% include icon.html icon="fa-solid fa-users" %}嵌软组
 
-{% include list_portrait.html data="members" component="portrait" filters="role: 嵌软组" style="small" %}
+{% include list_portrait.html data="members" component="portrait" filters="role: 嵌软组,time: 23" style="small"  %}
 ## {% include icon.html icon="fa-solid fa-users" %}算法组
 
-{% include list_portrait.html data="members" component="portrait" filters="role: 算法组" style="small" %}
+{% include list_portrait.html data="members" component="portrait" filters="role: 算法组, time:23" style="small" %}
 ## {% include icon.html icon="fa-solid fa-users" %}运营组
 
-{% include list_portrait.html data="members" component="portrait" filters="role: 运营组" style="small" %}
+{% include list_portrait.html data="members" component="portrait" filters="role: 运营组, time:23" style="small" %}
 
 ## {% include icon.html icon="fa-solid fa-users" %}梯队
 

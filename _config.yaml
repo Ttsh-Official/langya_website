@@ -1,7 +1,7 @@
 # site properties and page defaults
-title: HUSTLYRMDESCRIPTION=An engaging 1-3 sentence description of your lab.
+title: HUSTLYRM
 subtitle: 
-description: 
+description: 华中科技大学 RoboMaster 团队
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false
