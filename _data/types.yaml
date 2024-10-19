@@ -120,6 +120,16 @@ linkedin:
   tooltip: LinkedIn
   link: https://www.linkedin.com/in/$VALUE
 
+bilibili:
+  icon: fa-brands fa-bilibili
+  text: Bilibili
+  tooltip: Bilibili
+  link: https://space.bilibili.com/$VALUE
+wechat:
+  icon: fa-brands fa-weixin
+  text: WeChat
+  tooltip: WeChat
+
 # alerts
 
 tip:
