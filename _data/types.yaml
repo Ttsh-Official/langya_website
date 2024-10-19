@@ -45,8 +45,8 @@ external:
 
 home-page:
   icon: fa-solid fa-house-user
-  text: Home Page
-  tooltip: Home page
+  text: 个人主页
+  tooltip: 个人主页
 
 email:
   icon: fa-solid fa-envelope

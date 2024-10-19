@@ -7,7 +7,7 @@
 <div class="portrait-wrapper">
   <a 
     {% if page.slug != member.slug %}
-      href="javascript:void(0)"
+    href="{{ member.url | relative_url }}"
     {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
@@ -44,7 +44,7 @@
     <div class="portrait-links">
       {% if member.homepage %}
         <div style="margin-left: 10px; margin-right: 10px;">
-          <a href="{{ member.homepage }}" target="_blank" rel="noopener" title="Personal Website"
+          <a href="{{ member.homepage }}" target="_blank" rel="noopener" title="个人主页"
             text-decoration-line="none">
             <i class="fas fa-house"></i>
           </a>
