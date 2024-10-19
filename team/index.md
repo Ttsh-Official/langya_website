@@ -1,20 +1,43 @@
 ---
-title: Team
+title: 成员
 nav:
   order: 3
-  tooltip: About our team
+  tooltip: 关于我们
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
+# {% include icon.html icon="fa-solid fa-users" %}24 赛季团队成员
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+历史成员请参考[历届成员](/team/history)。
 
 {% include section.html %}
 
-{% include list.html data="members" component="portrait" filters="role: pi" %}
-{% include list.html data="members" component="portrait" filters="role: ^(?!pi$)" %}
+## {% include icon.html icon="fa-solid fa-users" %}指导老师
+
+{% include list_portrait.html data="members" component="portrait" filters="role: 指导老师" %}
+
+## {% include icon.html icon="fa-solid fa-users" %}团队负责人
+{% include list_portrait.html data="members" component="portrait" filters="type: 团队负责人" style="small" %}
+
+## {% include icon.html icon="fa-solid fa-users" %}机械组
+  
+{% include list_portrait.html data="members" component="portrait" filters="role: 机械组" style="small" %}
+
+## {% include icon.html icon="fa-solid fa-users" %}电路组
+
+{% include list_portrait.html data="members" component="portrait" filters="role: 电路组" style="small" %}
+## {% include icon.html icon="fa-solid fa-users" %}嵌软组
+
+{% include list_portrait.html data="members" component="portrait" filters="role: 嵌软组" style="small" %}
+## {% include icon.html icon="fa-solid fa-users" %}算法组
+
+{% include list_portrait.html data="members" component="portrait" filters="role: 算法组" style="small" %}
+## {% include icon.html icon="fa-solid fa-users" %}运营组
+
+{% include list_portrait.html data="members" component="portrait" filters="role: 运营组" style="small" %}
+
+## {% include icon.html icon="fa-solid fa-users" %}梯队
+
+
 
 {% include section.html background="images/background.jpg" dark=true %}
 

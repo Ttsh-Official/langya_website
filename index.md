@@ -1,35 +1,50 @@
 ---
 ---
 
-# Lab Website Template
+# 华中科技大学 狼牙战队 
 
-[Lab Website Template](https://github.com/greenelab/lab-website-template) is an easy-to-use, flexible website template for [labs](https://www.greenelab.com/).
-Spend less time worrying about managing a website and citations, and more time running your lab.
-
+华中科技大学RoboMaster团队（狼牙战队）是华中科技大学启明学院创新团队之一，是一个以参加RoboMaster机器人比赛为主，其余竞赛为辅，以培养队员全面综合水平目标的综合型团队。
 {%
   include button.html
   type="docs"
-  link="https://greene-lab.gitbook.io/lab-website-template-docs"
+  text="Bilibili"
+  icon="fa-brands fa-bilibili"
+  link="https://space.bilibili.com/475402455"
 %}
 {%
   include button.html
   type="github"
-  text="On GitHub"
-  link="greenelab/lab-website-template"
+  text="GitHub"
+  link="HUSTLYRM"
 %}
-
+{%
+  include button.html
+  type="docs"
+  text="微信公众号"
+  icon="fa-brands fa-weixin"
+  link="https://space.bilibili.com/475402455"
+%}
 {% include section.html %}
 
-## Highlights
+## 高光时刻
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+* 15年分区赛亚军、季军和第五名，在全国赛均进入全国三十二强；
+* 16年分区赛第五名，全国赛十六强；
+* 17年分区赛亚军，全国赛十六强；
+* 18年分区赛季军，全国赛三十二强；
+* 19年分区赛八强，全国赛三十二强；
+* 20年国家级二等奖；
+* 21年分区赛十六强；
+* 22年分区赛八强，全国赛国家级一等奖；
+* 23年分区赛十六强，全国四十六强国家级二等奖；
+* 24年分区赛殿军，全国三十二强。
 
 {%
   include button.html
   link="research"
-  text="See our publications"
+  text="我们的更多成绩"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -39,15 +54,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/cheer.jpg"
   link="research"
-  title="Our Research"
+  title="我们的成绩"
   text=text
 %}
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+作为一个多学科交叉的机器人团队，我们与企业、学校等多方面展开合作。推动科技创新，人才培养。
 
 {%
   include button.html
@@ -62,9 +77,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/cooporate.JPG"
   link="projects"
-  title="Our Projects"
+  title="我们的项目"
   flip=true
   style="bare"
   text=text
@@ -72,12 +87,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
 
 {%
   include button.html
   link="team"
-  text="Meet our team"
+  text="我们的所有成员"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -87,8 +102,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/background.jpg"
   link="team"
-  title="Our Team"
+  title="我们的成员"
   text=text
 %}

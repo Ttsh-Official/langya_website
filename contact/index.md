@@ -1,33 +1,29 @@
 ---
-title: Contact
+title: 联系
 nav:
   order: 5
-  tooltip: Email, address, and location
+  tooltip: 邮件、电话、地址
 ---
 
-# {% include icon.html icon="fa-regular fa-envelope" %}Contact
+# {% include icon.html icon="fa-regular fa-envelope" %}联系我们
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+狼牙战队欢迎所有热爱机器人的同学加入！
+
+湖北省武汉市洪山区珞喻路 1037 号
+华中科技大学智能互联网湖北省重点实验室
 
 {%
   include button.html
   type="email"
-  text="jane@smith.com"
-  link="jane@smith.com"
+  text="hustrobomaster@163.com"
+  link="hustrobomaster@163.com"
 %}
-{%
-  include button.html
-  type="phone"
-  text="(555) 867-5309"
-  link="+1-555-867-5309"
-%}
+
 {%
   include button.html
   type="address"
-  tooltip="Our location on Google Maps for easy navigation"
-  link="https://www.google.com/maps"
+  tooltip="我们实验室的地址"
+  link="https://surl.amap.com/1vpaONXCHaR5"
 %}
 
 {% include section.html %}

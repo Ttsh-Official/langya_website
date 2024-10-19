@@ -1,8 +1,8 @@
 ---
-title: Blog
+title: 博客
 nav:
   order: 4
-  tooltip: Musings and miscellany
+  tooltip: 技术分享交流
 ---
 
 # {% include icon.html icon="fa-solid fa-feather-pointed" %}Blog

@@ -4,6 +4,11 @@ FROM ruby:3.1.2
 # set working directory within container
 WORKDIR /usr/src/app
 
+RUN gem sources --add https://mirrors.tuna.tsinghua.edu.cn/rubygems/ --remove https://rubygems.org/
+RUN gem sources -l
+RUN bundle config mirror.https://rubygems.org https://mirrors.tuna.tsinghua.edu.cn/rubygems
+
+
 # pull in ruby (jekyll) and python (cite process) package info
 COPY Gemfile Gemfile.lock _cite/requirements.txt ./
 
