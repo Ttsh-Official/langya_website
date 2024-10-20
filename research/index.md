@@ -23,12 +23,27 @@ nav:
 {% include section.html %}
 
 ## 高光时刻
+<div class="card">
+<div class="card-text">
+<div class="card-title">RoboMaster 2024</div>
 
-RoboMaster 2024 分区赛小组生死赛，两发飞镖，大符加成，推爆基地。
+小组生死赛，两发飞镖，大符加成，推爆基地。
+</div>
+<div class="card-image">
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1954808056&bvid=BV1dy411h7D7&cid=1556478508&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</div>
+</div>
 
-RoboMaster 2024 分区赛十六进八，国赛名额关键争夺战。
+<div class="card">
+<div class="card-text">
+<div class="card-title">RoboMaster 2024</div>
+
+十六进八，国赛名额关键争夺战，顽强拼搏，三分钟推爆基地。
+</div>
+<div class="card-image">
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1405028929&bvid=BV1sr421L7yP&cid=1557709783&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</div>
+</div>
 
 
 {% include section.html %}

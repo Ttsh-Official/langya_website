@@ -10,8 +10,8 @@ proofer: false
 links:
   email: hustrobomaster@163.com
   github: https://github.com/HUSTLYRM
-  bilibili: https://space.bilibili.com/475402455
-  wechat: https://space.bilibili.com/475402455
+  bilibili: "475402455"
+  wechat: https://mp.weixin.qq.com/s/Zrk4PRRGSimJG9bVDj3Zsg
 ## jekyll settings
 
 # front matter defaults
