@@ -35,7 +35,9 @@ RoboMaster 2024 分区赛十六进八，国赛名额关键争夺战。
 
 ## 荣誉奖项
 ### 国家级
-{% include list.html data="awards" component="awards" %} 
+{% include list.html data="awards" component="awards" style="rich" filters="type: 国家级" %} 
 
+### 省级
+{% include list.html data="awards" component="awards" style="simple" filters="type: 省级"%}
 
 {% include section.html %}
