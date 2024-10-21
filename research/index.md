@@ -55,4 +55,9 @@ nav:
 ### 省级
 {% include list.html data="awards" component="awards" style="simple" filters="type: 省级"%}
 
+
+
+### 其他类型
+{% include list.html data="awards" component="awards" style="simple" filters="type: 其他"%}
+
 {% include section.html %}

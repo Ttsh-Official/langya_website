@@ -21,12 +21,26 @@ layout: default
 </div>
 
 <div>
-  {% if member.time %}
-    {{ member.time }} 赛季主力
+  {%if member.affiliation %}
+    {{ member.affiliation }}
   {% endif %}
+  {% if member.affiliation and member.role %}
+    <br>
+  {% endif %}
+  {% if member.grade %}
+    {{ member.grade }}级
+  {% endif %}
+  <br>
   {% if member.echelon %}
     {{ member.echelon }} 赛季梯队
   {% endif %}
+  {% if member.time and member.echelon %} 
+  ·
+  {% endif %}
+  {% if member.time %}
+    {{ member.time }} 赛季主力
+  {% endif %}
+  
 </div>
 
 {% endcapture %}
@@ -36,7 +50,6 @@ layout: default
 {{ content }}
 {% include section.html %}
 {% assign filter_string = "members:" | append: member.name %}
-
 
 {% if member.award %}
 <h1>荣誉成就</h1>

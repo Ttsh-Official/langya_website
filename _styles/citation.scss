@@ -26,6 +26,7 @@ $wrap: 800px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
 
 .citation-image {
@@ -54,17 +55,31 @@ $wrap: 800px;
   overflow-wrap: break-word;
   z-index: 0;
 }
+.citation-text-simple .align-right {
+  margin-left: auto; /* 使该子元素靠右对齐 */
+}
 .citation-text-simple {
   display: flex;
   gap: 10px;
   height: min-content;
-  width: 80%;
+  width: 90%;
   margin-bottom: 10px;
   text-align: left;
   flex-direction: row;
-  // 部分子元素向右摆放
   overflow-wrap: break-word;
   z-index: 0;
+  .citation-authors {
+    min-width: 20%;
+  }
+  .citation-title {
+    min-width: 20%;
+  }
+  .citation-info {
+    min-width: 10%;
+  }
+  .citation-description {
+    min-width: 50%;
+  }
 }
 
 .citation-title,
@@ -75,24 +90,25 @@ $wrap: 800px;
   max-width: 100%;
 }
 .citation-authors{
-  // 向右摆放
+  // 向右
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 10px;
-  margin-top: 20px;
+
+  min-width: 20%;
 }
 .citation-title {
   font-weight: var(--semi-bold);
   font-size: large;
   text-align: center;
-  margin-top: 20px;
+
 }
 .citation-info {
   font-weight: var(--semi-bold);
   font-size: medium;
   text-align: right;
-  margin-top: 20px;
+
 }
 
 .citation-text > .icon {

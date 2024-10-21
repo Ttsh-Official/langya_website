@@ -82,7 +82,7 @@
       </div>
       {% endif %}
       <div class="citation-info">
-      {% if award.type %}
+      {% if award.type and award.type!="其他" %}
           {{ award.type }}
       {% endif %}
       {%  if award.prize %}
@@ -163,14 +163,14 @@
 <div class="citation-simple">
   {% if award.name or award.type or award.description %}
   <div class="citation-text-simple" >
-    <div class="citation-title">
+    <div class="citation-title center simple">
       {% if award.name %}
         {{ award.name }}
       {% endif %}
     </div>
   {% endif %}
-  <div class="citation-info">
-    {% if award.type %}
+  <div class="citation-info center simple">
+    {% if award.type and award.type!="其他" %}
       {{ award.type }}
     {% endif %}
     {% if award.prize %}
@@ -178,17 +178,17 @@
     {% endif %}
   </div>
   {% if award.time %}
-    <div class="citation-date">
+    <div class="citation-date center simple">
       {{ award.time | date: "%Y年-%m月" }}
     </div>
   {% endif %}
-  <div class="citation-details">
+  <div class="citation-details center simple">
     {% if award.description %}
       {{ award.description }}
     {% endif %}
   </div>
   {% if award.members %}
-    <div class="citation-authors" >
+    <div class="citation-authors center simple align-right" >
       <strong>成员:</strong>
       {% for author in award.members %}
         {% assign member = site.members
