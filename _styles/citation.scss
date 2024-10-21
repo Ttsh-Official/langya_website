@@ -50,6 +50,7 @@ $wrap: 800px;
   height: min-content;
   width: 80%;
   margin-bottom: 20px;
+  margin-top: 20px;
   text-align: left;
   flex-direction: column;
   overflow-wrap: break-word;
@@ -102,7 +103,6 @@ $wrap: 800px;
   font-weight: var(--semi-bold);
   font-size: large;
   text-align: center;
-
 }
 .citation-info {
   font-weight: var(--semi-bold);
