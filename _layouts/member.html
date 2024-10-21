@@ -20,6 +20,15 @@ layout: default
   {% endfor %}
 </div>
 
+<div>
+  {% if member.time %}
+    {{ member.time }} 赛季主力
+  {% endif %}
+  {% if member.echelon %}
+    {{ member.echelon }} 赛季梯队
+  {% endif %}
+</div>
+
 {% endcapture %}
 
 {% include float.html content=floatcontent %}
