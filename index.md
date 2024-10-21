@@ -5,14 +5,6 @@
 
 华中科技大学RoboMaster团队（狼牙战队）是华中科技大学启明学院创新团队之一，是一个以参加RoboMaster机器人比赛为主，其余竞赛为辅，以培养队员全面综合水平为目标的综合型团队。
 
-
-{%
-  include button.html
-  type="docs"
-  text="团队介绍"
-  icon="fa-solid fa-info"
-  link="about"
-%}
 {%
   include button.html
   type="docs"
