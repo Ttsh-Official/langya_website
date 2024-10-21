@@ -30,7 +30,9 @@ layout: default
   {% if member.grade %}
     {{ member.grade }}级
   {% endif %}
+  {% if member.grade and (member.echelon or member.time) %}
   <br>
+  {% endif %}  
   {% if member.echelon %}
     {{ member.echelon }} 赛季梯队
   {% endif %}
