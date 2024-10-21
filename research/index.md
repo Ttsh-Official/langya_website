@@ -48,16 +48,21 @@ nav:
 
 {% include section.html %}
 
+
+
 ## 荣誉奖项
+{% include search-box.html %}
+{% include search-info.html %}
+
 ### 国家级
 {% include list.html data="awards" component="awards" style="rich" filters="type: 国家级" %} 
 
 ### 省级
 {% include list.html data="awards" component="awards" style="simple" filters="type: 省级"%}
 
-
-
 ### 其他类型
 {% include list.html data="awards" component="awards" style="simple" filters="type: 其他"%}
+
+
 
 {% include section.html %}

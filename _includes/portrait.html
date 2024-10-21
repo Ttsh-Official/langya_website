@@ -34,7 +34,19 @@
           <span class="portrait-role">
             {% assign type = site.data.types[member.role] %}
             {% include icon.html icon=type.icon %}
+            {% if member.affiliation %}
+            <span>{{ member.affiliation | default: type.affiliation }}</span>
+            {% endif %}
+
+
+            {% if member.grade %}
+            <br>
+            <span>{{ member.grade | default: type.grade }}级</span>
+            {% endif %}
+            {% if member.description %}
+            <br>
             <span>{{ member.description | default: type.description }}</span>
+            {% endif %}
           </span>
         {% endif %}
       </span>

@@ -11,28 +11,7 @@ layout: default
   | first
   | default: include
 %}
-
 <div>
-  {% for link in page.links %}
-    {% assign key = link[0] %}
-    {% assign value = link[1] %}
-    {% include button.html type=key link=value style="bare" %}<br>
-  {% endfor %}
-</div>
-
-<div>
-  {%if member.affiliation %}
-    {{ member.affiliation }}
-  {% endif %}
-  {% if member.affiliation and member.role %}
-    <br>
-  {% endif %}
-  {% if member.grade %}
-    {{ member.grade }}级
-  {% endif %}
-  {% if member.grade and (member.echelon or member.time) %}
-  <br>
-  {% endif %}  
   {% if member.echelon %}
     {{ member.echelon }} 赛季梯队
   {% endif %}
@@ -42,8 +21,17 @@ layout: default
   {% if member.time %}
     {{ member.time }} 赛季主力
   {% endif %}
-  
 </div>
+
+<div>
+  {% for link in page.links %}
+    {% assign key = link[0] %}
+    {% assign value = link[1] %}
+    {% include button.html type=key link=value style="bare" %}<br>
+  {% endfor %}
+</div>
+
+
 
 {% endcapture %}
 

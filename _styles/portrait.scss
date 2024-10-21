@@ -54,6 +54,7 @@
   display: none;
 }
 
+
 .portrait-text {
   display: flex;
   flex-direction: column;
@@ -83,4 +84,8 @@
 .portrait[data-style="small"] .portrait-role .icon {
   left: -2px;
   top: -2px;
+
+}
+.portrait[data-style="small"] .portrait-role{
+  font-size: 13px;
 }
