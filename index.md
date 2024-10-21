@@ -23,7 +23,7 @@
   type="docs"
   text="微信公众号"
   icon="fa-brands fa-weixin"
-  link="https://space.bilibili.com/475402455"
+  link="https://mp.weixin.qq.com/s/Zrk4PRRGSimJG9bVDj3Zsg"
 %}
 {% include section.html %}
 
