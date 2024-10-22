@@ -32,6 +32,10 @@ defaults:
       type: "posts"
     values:
       layout: post
+  - scope:
+      type: "news"
+    values:
+      layout: post
 
 
 collections:
@@ -42,6 +46,8 @@ collections:
   posts:
     output: true
   awards:
+    output: true
+  news:
     output: true
 
 # jekyll plugins

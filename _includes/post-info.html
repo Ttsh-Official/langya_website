@@ -14,12 +14,12 @@
     {% endif %}
   {% endif %}
 
-  {% assign published = include.published | date: "%B %d, %Y" %}
-  {% assign updated = include.updated | date: "%B %d, %Y" %}
+  {% assign published = include.published | date: "%Y年%m月%d日" %}
+  {% assign updated = include.updated | date: "%Y年%m月%d日" %}
 
   {% if published %}
     <span data-tooltip="Originally published on">
-      {% include icon.html icon="fa-regular fa-calendar" %}
+      {% include icon.html icon="fa-regular fa-calendar" %}发布于
       <span>{{ published }}</span>
     </span>
   {% endif %}
@@ -27,6 +27,7 @@
   {% if updated and updated != "" and updated != published %}
     <span data-tooltip="Last updated on">
       {% include icon.html icon="fa-solid fa-clock-rotate-left" %}
+      更新于
       <span>{{ updated }}</span>
     </span>
   {% endif %}
