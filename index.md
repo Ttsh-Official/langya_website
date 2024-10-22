@@ -87,6 +87,9 @@
   text=text
 %}
 
+
+
+
 {% capture text %}
 这里聚集了机械、电路、嵌软、算法、运营多方面的人才。
 
@@ -106,5 +109,30 @@
   image="images/background.jpg"
   link="team"
   title="我们的成员"
+  text=text
+%}
+
+{% capture text %}
+
+我们活跃于各种社会活动，积极展现狼牙风采。
+
+{%
+  include button.html
+  link="projects"
+  text="我们的最近动态"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+  style="bare"
+%}
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/news.jpeg"
+  link="projects"
+  title="我们的新闻"
+  flip=true
+  style="bare"
   text=text
 %}
