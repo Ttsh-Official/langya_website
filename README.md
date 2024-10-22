@@ -1,6 +1,6 @@
 
 # HUSTLYRM
 
-Visit **[langya.micdz.cn](http://langya.micdz.cn)** 🚀
+Visit **[www.hustlangya.fun](http://www.hustlangya.fun)** 🚀
 
 _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
