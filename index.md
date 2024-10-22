@@ -130,7 +130,7 @@
 {%
   include feature.html
   image="images/news.jpeg"
-  link="projects"
+  link="news"
   title="我们的新闻"
   flip=true
   style="bare"
