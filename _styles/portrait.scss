@@ -62,6 +62,8 @@
 }
 
 .portrait-name {
+  // 文字横向排列
+  white-space: nowrap;
   font-family: var(--heading);
   font-weight: var(--semi-bold);
 }
