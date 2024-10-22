@@ -104,7 +104,7 @@ Gidance视觉定位稳定悬停，非线性预测，飞控通道映射，助力�
 
 {%
   include feature.html
-  image="images/projects/rm/4.png"
+  image="images/projects/rm/5.png"
   link="projects"
   title="空中机器人"
   flip=false
@@ -121,7 +121,7 @@ Gidance视觉定位稳定悬停，非线性预测，飞控通道映射，助力�
 
 {%
   include feature.html
-  image="images/projects/rm/4.png"
+  image="images/projects/rm/6.png"
   link="projects"
   title="飞镖机器人"
   flip=true
@@ -137,7 +137,7 @@ Gidance视觉定位稳定悬停，非线性预测，飞控通道映射，助力�
 
 {%
   include feature.html
-  image="images/projects/rm/4.png"
+  image="images/projects/rm/7.png"
   link="projects"
   title="雷达机器人"
   flip=false
