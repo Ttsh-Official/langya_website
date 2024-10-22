@@ -20,6 +20,7 @@
   {% endif %}
 >
 {% if page.url=="/" %}
+  <div class="overlay"></div>
 <video class="background-video" preload="auto" playsinline="true" x5-playsinline="true" webkit-playsinline="true" name="media" autoplay="autoplay" loop="loop" muted="muted" poster="{{ image }}" src="{{ video }}" ></video>
 {% endif %}
   <a href="{{ "/" | relative_url }}" class="home">
