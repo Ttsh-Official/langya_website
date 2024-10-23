@@ -118,7 +118,7 @@
 
 {%
   include button.html
-  link="projects"
+  link="news"
   text="我们的最近动态"
   icon="fa-solid fa-arrow-right"
   flip=true
