@@ -6,5 +6,5 @@
     {{- inline | strip_newlines -}}
   </span>
 {%- elsif include.icon and include.icon != "" -%}
-  <i class="icon {{ include.icon }}" style="color: {{ include.color | default: '#ffffff' }};"></i>
+  <i class="icon {{ include.icon }}" style="color: {{ include.color | default: 'var(--light-gray)' }};"></i>
 {%- endif -%}
