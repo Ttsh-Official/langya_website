@@ -70,16 +70,17 @@ $wrap: 800px;
   overflow-wrap: break-word;
   z-index: 0;
   .citation-authors {
-    min-width: 20%;
+    min-width: 30%;
   }
   .citation-title {
-    min-width: 20%;
+
+    max-width: 50%;
   }
   .citation-info {
     min-width: 10%;
   }
   .citation-description {
-    min-width: 50%;
+    min-width: 60%;
   }
 }
 
