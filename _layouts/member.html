@@ -11,17 +11,7 @@ layout: default
   | first
   | default: include
 %}
-<div>
-  {% if member.echelon %}
-    {{ member.echelon }} 赛季梯队
-  {% endif %}
-  {% if member.time and member.echelon %} 
-  ·
-  {% endif %}
-  {% if member.time %}
-    {{ member.time }} 赛季主力
-  {% endif %}
-</div>
+
 
 <div>
   {% for link in page.links %}
