@@ -34,6 +34,8 @@ title: 成员
 {% include list_portrait.html data="members" component="portrait" filters="role: 运营组, time:23" style="small" %}
 
 ## {% include icon.html icon="fa-solid fa-users" %}梯队
+{% include list_portrait.html data="members" component="portrait" filters="echelon: 23" style="tiny" %}
+
 
 
 

@@ -19,6 +19,7 @@
     {% assign data = data | sort: "date" | reverse %}
   {% endif %}
 
+  {% assign data = data | sort: "order" | reverse%}
   <div style="display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
 
     {% for d in data %}
