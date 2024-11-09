@@ -27,6 +27,10 @@ defaults:
       type: "members"
     values:
       layout: member
+  - scope:
+      type: "awards"
+    values:
+      layout: award
   # markdown files in /_posts
   - scope:
       type: "posts"

@@ -1,26 +1,13 @@
-{% assign award = site.awards
-  | where_exp: "award", "award.slug == include.lookup"
-  | first
-  | default: include
-%}
+---
+layout: default
+---
 
-{% assign prize = award.prize %} 
-{% if prize %}
-  {% if prize contains "一等奖" %}
-  {% assign icon_color="#f7c44d" %}
-  {% elsif prize contains "特等奖" %}
-  {% assign icon_color="#f7c44d" %}
-  {% elsif prize contains "二等奖" %}
-  {% assign icon_color="#e0e0e0" %}
-  {% elsif prize contains "三等奖" %}
-  {% assign icon_color="#7a4c10" %}
-  {% endif %}
-{% endif %} 
+{% include section.html background=page.image %}
 
-{% if include.style == "rich"%}
+<h1 class="center">{{ page.name }}</h1>
 
 <div class="citation-container">
-  <!-- {% assign prize = award.prize %}
+  <!-- {% assign prize = page.prize %}
 {% if prize %}
   {% if prize contains "一等奖" %}
   {% include icon.html icon="fa-solid fa-trophy" color="#f7c44d" %}
@@ -73,32 +60,23 @@
     <!-- 根据获奖的级别设置不同的 icon -->
 
 
-      {% if award.name or award.type or award.description %}
-
-
-      <div class="citation-title">  
-          {% if award.name %}
-              {{ award.name }}
-          {% endif %}
-      </div>
-      {% endif %}
       <div class="citation-info">
-      {% if award.type and award.type!="其他" %}
-          {{ award.type }}
+      {% if page.type and page.type!="其他" %}
+          {{ page.type }}
       {% endif %}
-      {%  if award.prize %}
-          {{ award.prize }}
+      {%  if page.prize %}
+          {{ page.prize }}
       {% endif %}
     </div>
       
           <div class="citation-date">
-             <!-- 解析award.time的Y-m -->
+             <!-- 解析page.time的Y-m -->
               <!-- 输出为%Y年-%m月 -->
-              {% if award.date %}
-              {{ award.date | date: "%Y年%m月" }}
+              {% if page.date %}
+              {{ page.date | date: "%Y年%m月" }}
               {% endif %}
-              {% if award.detail %} 
-            <a href="{{ award.url | relative_url }}" title="{{ award.name }}" >
+              {% if page.detail %} 
+            <a href="{{ page.url | relative_url }}" title="{{ page.name }}" >
               查看详情
             </a>
             {% endif %}
@@ -106,15 +84,15 @@
       
       
       <div class="citation-details">
-      {% if award.description %}
-          {{ award.description }}
+      {% if page.description %}
+          {{ page.description }}
       {% endif %}
     </div>
-    {% if award.members %}
+    {% if page.members %}
     <div class= "citation-authors">
       <!-- 遍历奖项的 members -->
         <strong>成员:</strong>
-        {% for author in award.members %}
+        {% for author in page.members %}
         {% assign member = site.members
           | where_exp: "member", "member.slug == author"
           | first
@@ -165,56 +143,11 @@
 </svg>
 </div>
 </div>
-{% endif %} 
-{% if include.style == "simple"%}
-<!-- 不显示 svg 图片，不用 container -->
-<div class="citation-simple">
-  {% if award.name or award.type or award.description %}
-  <div class="citation-text-simple" >
-    <div class="citation-title center simple">
-      {% if award.name %}
-        {{ award.name }}
-      {% endif %}
-    </div>
-  {% endif %}
-  <div class="citation-info center simple">
-    {% if award.type and award.type!="其他" %}
-      {{ award.type }}
-    {% endif %}
-    {% if award.prize %}
-      {{ award.prize }}
-    {% endif %}
-  </div>
-  {% if award.time %}
-    <div class="citation-date center simple">
-      {{ award.date | date: "%Y年-%m月" }}
-    </div>
-  {% endif %}
-  <div class="citation-details center simple">
-    {% if award.description %}
-      {{ award.description }}
-    {% endif %}
-  </div>
-  {% if award.members %}
-    <div class="citation-authors center simple align-right" >
-      <strong>成员:</strong>
-      {% for author in award.members %}
-        {% assign member = site.members
-          | where_exp: "member", "member.slug == author"
-          | first
-        %}
-        {% if member %}
-          <a href="{{ member.url | relative_url }}" title="{{ member.name }}" class="center">
-            <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="portrait-image" loading="lazy" style="width: 30px;">
-            {{ member.name }}
-          </a>
-        {% else %}
-          {{ author }}
-        {% endif %}
-        {% unless forloop.last %},{% endunless %}
-      {% endfor %}
-    </div>
-  {% endif %}
-</div>
-</div>
-{% endif %} 
+
+{% include section.html %}
+
+{{ content }}
+
+
+
+
