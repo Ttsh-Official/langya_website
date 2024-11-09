@@ -53,9 +53,48 @@ nav:
 ## 荣誉奖项
 {% include search-box.html %}
 {% include search-info.html %}
+{% assign national_awards_count = 0 %}
+{% assign international_awards_count = 0 %}
+{% assign provincial_awards_count = 0 %}
+{% assign other_awards_count = 0 %}
+{% for award in site.awards %}
+{% if award.type == "国家级" %}
+{% assign national_awards_count = national_awards_count | plus: 1 %}
+{% elsif award.type == "国际级" %}
+{% assign international_awards_count = international_awards_count | plus: 1 %}
+{% elsif award.type == "省级" %}
+{% assign provincial_awards_count = provincial_awards_count | plus: 1 %}
+{% else %}
+{% assign other_awards_count = other_awards_count | plus: 1 %}
+{% endif %}
+{% endfor %}
+
+{% assign awards_count =  national_awards_count | plus: international_awards_count | plus: provincial_awards_count | plus: other_awards_count %}
+
+根据不完全统计，在过去两年，狼牙战队已经获得了总计 {{awards_count}} 项奖项。
+
+<table>
+<tr>
+  <td>国家级奖项</td>
+  <td>国际级奖项</td>
+  <td>省级奖项</td>
+  <td>其他奖项</td>
+</tr>
+<tr>
+  <td>{{national_awards_count}}</td>
+  <td>{{international_awards_count}}</td>
+  <td>{{provincial_awards_count}}</td>
+  <td>{{other_awards_count}}</td>
+</tr>
+</table>
+
+
 
 ### 国家级
 {% include list.html data="awards" component="awards" style="rich" filters="type: 国家级" %} 
+
+### 国际级
+{% include list.html data="awards" component="awards" style="simple" filters="type: 国际级" %} 
 
 ### 省级
 {% include list.html data="awards" component="awards" style="simple" filters="type: 省级"%}
